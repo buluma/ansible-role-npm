@@ -35,14 +35,12 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "alpine"
+          - image: "alpine"   # TODO: Fedora Rawhide Problem: package npm-1:8.1.2-1.16.13.2.6.fc36.x86_64 requires nodejs = 1:16.13.2-6.fc36, but none of the providers can be installed\n
             tag: "latest"
           - image: "fedora"
             tag: "34"
           - image: "fedora"
             tag: "latest"
-          - image: "fedora"
-            tag: "rawhide"
     steps:
       - name: checkout
         uses: actions/checkout@v2
