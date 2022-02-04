@@ -18,23 +18,24 @@ molecule:
     matrix:
       - image: "alpine"
         tag: "latest"
-      - image: "amazonlinux"
-        tag: "latest"
-      - image: "enterpriselinux"
-        tag: "latest"
-      - image: "debian"
-        tag: "latest"
       - image: "fedora"
         tag: "34"
       - image: "fedora"
         tag: "latest"
       - image: "fedora"
         tag: "rawhide"
-      - image: "ubuntu"
+
+testing:
+  script:
+    - image=${image} tag=${tag} molecule test
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "testing"
+  retry: 1
+  parallel:
+    matrix:
+      - image: "alpine"
         tag: "latest"
-      - image: "ubuntu"
-        tag: "bionic"
 
 galaxy:
   script:
-    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.${CI_PROJECT_NAME}
+    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.npm
