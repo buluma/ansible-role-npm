@@ -35,6 +35,17 @@ molecule:
       - image: "ubuntu"
         tag: "bionic"
 
+testing:
+  script:
+    - image=${image} tag=${tag} molecule test
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "testing"
+  retry: 1
+  parallel:
+    matrix:
+      - image: "alpine"
+        tag: "latest"
+
 galaxy:
   script:
-    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.${CI_PROJECT_NAME}
+    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.npm
