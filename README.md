@@ -29,9 +29,9 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
   become: yes
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.ca_certificates
-    - role: robertdebock.epel
+    - role: buluma.bootstrap
+    - role: buluma.ca_certificates
+    - role: buluma.epel
 ```
 
 
@@ -57,9 +57,9 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[robertdebock.bootstrap](https://galaxy.ansible.com/buluma/robertdebock.bootstrap)|[![Build Status GitHub](https://github.com/buluma/robertdebock.bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/robertdebock.bootstrap)|
-|[robertdebock.ca_certificates](https://galaxy.ansible.com/buluma/robertdebock.ca_certificates)|[![Build Status GitHub](https://github.com/buluma/robertdebock.ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.ca_certificates/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.ca_certificates/badges/main/pipeline.svg)](https://gitlab.com/buluma/robertdebock.ca_certificates)|
-|[robertdebock.epel](https://galaxy.ansible.com/buluma/robertdebock.epel)|[![Build Status GitHub](https://github.com/buluma/robertdebock.epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/robertdebock.epel/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/robertdebock.epel/badges/main/pipeline.svg)](https://gitlab.com/buluma/robertdebock.epel)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Build Status GitHub](https://github.com/buluma/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-ca_certificates/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ca_certificates)|
+|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-epel/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-epel)|
 
 ## [Context](#context)
 
