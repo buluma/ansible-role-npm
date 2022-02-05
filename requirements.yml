@@ -1,6 +1,6 @@
 ---
 roles:
-  - name: robertdebock.bootstrap
-  - name: robertdebock.ca_certificates
-  - name: robertdebock.epel
+  - name: buluma.bootstrap
+  - name: buluma.ca_certificates
+  - name: buluma.epel
 collections:
