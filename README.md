@@ -76,7 +76,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |alpine|all|
-|amazon|Candidate|
 |el|8|
 |debian|bullseye|
 |fedora|all|
@@ -95,6 +94,7 @@ Some roles can't run on a specific distribution or version. Here are some except
 | variation                 | reason                 |
 |---------------------------|------------------------|
 | debian:testing | The repository 'https://deb.nodesource.com/node_10.x bullseye Release' does not have a Release file. |
+| amazonlinux:latest | Package: 1:nodejs-16.13.2-7.el7.x86_64 (epel). Requires: libuv >= 1:1.42.0 |
 
 
 If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-npm/issues)
