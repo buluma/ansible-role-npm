@@ -1,4 +1,4 @@
-# [npm](#npm)
+# [Ansible role npm](#npm)
 
 Install npm on your system.
 
