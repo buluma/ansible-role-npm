@@ -1,10 +1,10 @@
-# [Ansible role npm](#npm)
+# Ansible role [npm](https://galaxy.ansible.com/ui/standalone/roles/buluma/npm/documentation)
 
 Install npm on your system.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-npm/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-npm/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-npm/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-npm/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-npm.svg)](https://github.com/buluma/ansible-role-npm/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/npm)](https://galaxy.ansible.com/ui/standalone/roles/buluma/npm/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -104,9 +104,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
