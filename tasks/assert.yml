@@ -5,4 +5,4 @@
     that:
       - npm_registry is defined
       - npm_registry is string
-    quiet: yes
+    quiet: true

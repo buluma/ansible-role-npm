@@ -3,7 +3,7 @@
 
 - name: Import assert.yml
   ansible.builtin.import_tasks: assert.yml
-  run_once: yes
+  run_once: true
   delegate_to: localhost
 
 - name: Configure debian
@@ -46,5 +46,5 @@
     path: /usr/etc/npmrc
     regexp: "^registry="
     line: "registry={{ npm_registry }}"
-    create: yes
+    create: true
     mode: "0644"
