@@ -1,33 +1,30 @@
----
 galaxy_info:
   author: buluma
   role_name: npm
   description: Install npm on your system.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.12"
-
+  min_ansible_version: '2.12'
   platforms:
-    - name: Alpine
-      versions:
-        - all
-    - name: EL
-      versions:
-        - "8"
-    - name: Debian
-      versions:
-        - bullseye
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: Kali
-      versions:
-        - all
+  - name: Alpine
+    versions:
+    - all
+  - name: EL
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Kali
+    versions:
+    - all
   galaxy_tags:
-    - npm
-    - nodejs
-
+  - npm
+  - nodejs
 dependencies: []
