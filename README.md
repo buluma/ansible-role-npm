@@ -12,28 +12,28 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- name: Converge
-  hosts: all
-  become: true
-  gather_facts: true
+  - name: Converge
+    hosts: all
+    become: true
+    gather_facts: true
 
-  roles:
-    - role: buluma.npm
+    roles:
+      - role: buluma.npm
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-npm/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-- name: Prepare
-  hosts: all
-  gather_facts: false
-  become: true
+  - name: Prepare
+    hosts: all
+    gather_facts: false
+    become: true
 
-  roles:
-    - role: buluma.bootstrap
-    - role: buluma.ca_certificates
-    - role: buluma.epel
+    roles:
+      - role: buluma.bootstrap
+      - role: buluma.ca_certificates
+      - role: buluma.epel
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -48,7 +48,8 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 
 # The npm_registry is mapped in `vars/main.yml` to a usable default,
 # you can overwrite it here if required.
-npm_registry: "{{ _npm_registry[ansible_distribution] | default(_npm_registry['default']) }}"
+npm_registry: "{{ _npm_registry[ansible_distribution] | default(_npm_registry['default'])
+  }}"
 ```
 
 ## [Requirements](#requirements)

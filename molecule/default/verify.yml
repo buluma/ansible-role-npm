@@ -1,11 +1,11 @@
 ---
-- name: Verify
-  hosts: all
-  become: true
-  gather_facts: false
+  - name: Verify
+    hosts: all
+    become: true
+    gather_facts: false
 
-  tasks:
-    - name: Install package with npm
-      community.general.npm:
-        name: debug
-        global: true
+    tasks:
+      - name: Install package with npm
+        community.general.npm:
+          name: debug
+          global: true
