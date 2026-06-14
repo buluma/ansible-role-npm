@@ -11,10 +11,11 @@
     - ansible_distribution == "Debian"
   block:
     - name: Install nodejs key
-      ansible.builtin.apt_key:
+      ansible.builtin.get_url:
         url: "{{ npm_apt_key }}"
-        state: present
+        dest: /etc/apt/trusted.gpg.d/npm.asc
         validate_certs: "{{ npm_validate_certs }}"
+        mode: "0644"
 
     - name: Install nodejs deb repository
       ansible.builtin.apt_repository:
