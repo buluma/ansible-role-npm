@@ -20,11 +20,11 @@ npm_yum_repositories:
     baseurl: "https://rpm.nodesource.com/pub/el/$releasever/SRPMS/"
     description: Node.js for Enterprise Linux 6 - $basearch - Source
 
-npm_apt_key: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+npm_apt_key: "https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key"
 
 npm_apt_repositories:
-  - "deb https://deb.nodesource.com/node_10.x {{ ansible_facts['distribution_release'] }} main"
-  - "deb-src https://deb.nodesource.com/node_10.x {{ ansible_facts['distribution_release'] }} main"
+  - "deb https://deb.nodesource.com/node_20.x nodistro main"
+  - "deb-src https://deb.nodesource.com/node_20.x nodistro main"
 
 # The npm_registry is set in `defaults/main.yml`, bases on this mapping.
 _npm_registry:
