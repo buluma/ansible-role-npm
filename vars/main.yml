@@ -5,7 +5,7 @@ _npm_validate_certs:
   default: true
   Debian: false
 
-npm_validate_certs: "{{ _npm_validate_certs[ansible_facts.os_family] | default(_npm_validate_certs['default']) }}"
+npm_validate_certs: "{{ _npm_validate_certs[ansible_facts['os_family']] | default(_npm_validate_certs['default']) }}"
 
 npm_packages:
   - npm
@@ -23,8 +23,8 @@ npm_yum_repositories:
 npm_apt_key: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
 
 npm_apt_repositories:
-  - "deb https://deb.nodesource.com/node_10.x {{ ansible_facts.distribution_release }} main"
-  - "deb-src https://deb.nodesource.com/node_10.x {{ ansible_facts.distribution_release }} main"
+  - "deb https://deb.nodesource.com/node_10.x {{ ansible_facts['distribution_release'] }} main"
+  - "deb-src https://deb.nodesource.com/node_10.x {{ ansible_facts['distribution_release'] }} main"
 
 # The npm_registry is set in `defaults/main.yml`, bases on this mapping.
 _npm_registry:
