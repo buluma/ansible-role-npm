@@ -7,8 +7,13 @@ _npm_validate_certs:
 
 npm_validate_certs: "{{ _npm_validate_certs[ansible_facts['os_family']] | default(_npm_validate_certs['default']) }}"
 
-npm_packages:
-  - npm
+_npm_packages:
+  default:
+    - npm
+  Debian:
+    - nodejs
+
+npm_packages: "{{ _npm_packages[ansible_facts['os_family']] | default(_npm_packages['default']) }}"
 
 npm_gpg_key: "https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL"
 
