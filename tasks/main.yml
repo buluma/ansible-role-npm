@@ -8,7 +8,7 @@
 
 - name: Configure debian
   when:
-    - ansible_facts['distribution'] == "Debian"
+    - ansible_facts['os_family'] == "Debian"
   block:
     - name: Install nodejs key
       ansible.builtin.get_url:
