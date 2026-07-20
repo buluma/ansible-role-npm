@@ -81,7 +81,6 @@
 
 **Merged pull requests:**
 
-- Version bump [\#8](https://github.com/buluma/ansible-role-npm/pull/8) ([buluma](https://github.com/buluma))
 - Testing [\#6](https://github.com/buluma/ansible-role-npm/pull/6) ([buluma](https://github.com/buluma))
 
 ## [1.0.0](https://github.com/buluma/ansible-role-npm/tree/1.0.0) (2022-02-04)
@@ -90,6 +89,7 @@
 
 **Merged pull requests:**
 
+- Version bump [\#8](https://github.com/buluma/ansible-role-npm/pull/8) ([buluma](https://github.com/buluma))
 - Update gitlab\_trigger.yml [\#4](https://github.com/buluma/ansible-role-npm/pull/4) ([buluma](https://github.com/buluma))
 - Bump buluma/galaxy-action from 1.0.1 to 1.1.0 [\#3](https://github.com/buluma/ansible-role-npm/pull/3) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 1 to 2.4.0 [\#2](https://github.com/buluma/ansible-role-npm/pull/2) ([dependabot[bot]](https://github.com/apps/dependabot))
