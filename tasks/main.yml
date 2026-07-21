@@ -23,6 +23,15 @@
         state: present
       loop: "{{ npm_apt_repositories }}"
 
+    - name: Pin nodejs to the NodeSource repository
+      ansible.builtin.copy:
+        dest: /etc/apt/preferences.d/nodesource
+        content: |
+          Package: *
+          Pin: origin deb.nodesource.com
+          Pin-Priority: 600
+        mode: "0644"
+
 - name: Install nodejs rpm repository
   ansible.builtin.yum_repository:
     name: "{{ item.name }}"
