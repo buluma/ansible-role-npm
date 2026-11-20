@@ -35,7 +35,8 @@
 
     # Each item of npm_apt_repositories is a one-line "deb [options] URI SUITE [COMPONENT...]"
     # string, split here into the parts deb822_repository needs.
-    - name: Install nodejs deb repository
+    # The noqa is there because ansible-lint can't validate the templated types.
+    - name: Install nodejs deb repository  # noqa: args[module]
       ansible.builtin.deb822_repository:
         name: "{{ _npm_apt_repository_name }}"
         types: "{{ _npm_apt_repository_types }}"
